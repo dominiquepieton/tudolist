@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>todoList</title>
+</head>
+<body>
+    <div class="container">
+        <div class="list">
+            <h1>Ma liste : </h1>
+            <div class="list-container">
+                <ul id="liste">   
+                </ul>
+            </div>
+            <input type="text" id="list" placeholder="list" >
+            <div class="btn-container">
+                <button id="valid" onclick = ajoutList()>ajouter</button> 
+                <button class="delete" onclick=supprime()>supprime</button>
+            </div>
+        </div>
+        <div class="tache">
+            <div class="tache-container">
+                <ul id="taches">
+                </ul>
+            </div>
+            <div class="btn-tache">
+                <input type="text" id="inputTache" placeholder="list" >
+                <button id="valid" onclick = ajoutTache()>ajouter</button> 
+                <button class="delete" onclick=supprimeTache()>supprime</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
